@@ -194,8 +194,8 @@ end
 
 
 function removeScreenCap()
-    -- scene.screenCap:removeSelf()
-    -- scene.screenCap = nil    
+    scene.screenCap:removeSelf()
+    scene.screenCap = nil
 end
 
 
@@ -210,18 +210,13 @@ local function captureWithDelay()
     -- local alert = native.showAlert( "Success", "Screen Capture Saved to Library", { "OK" } )
 
 --  To be used AUTOMATICALLY when the game is over
-    scene.screenCap = display.captureScreen()
-
-    -- Scale the screen capture, now on the screen, to half its size
-    scene.screenCap:scale( 0.4, 0.4 )
-    display.save( scene.screenCap, { filename="WOW.jpg", baseDir=system.TemporaryDirectory } )
 
     scene.screenCap.x = display.contentCenterX
     scene.screenCap.y = display.contentCenterY
 
     -- display.save( screenCap, { filename="WOW.jpg", baseDir=system.TemporaryDirectory}} )
     facebookShare.score = 50
-    facebookShare.doFBLogin(scene.screenCap)
+    facebookShare.doFBLogin()
 
     timer.performWithDelay( 600000, removeScreenCap )
 end
@@ -251,6 +246,13 @@ end
 function handleGameOverEvent(type)
     scene.pausePanel:show()
     -- audio.pause() -- pause all audio
+
+    --Taking screen shot for game over
+    scene.screenCap = display.captureScreen()
+    -- Scale the screen capture, now on the screen, to half its size
+    scene.screenCap:scale( 0.4, 0.4 )
+    display.save( scene.screenCap, { filename="WOW.jpg", baseDir=system.TemporaryDirectory } )
+
     physics.pause()
     if type ==1 then
         scene.pausePanel.title = display.newText( "GAME OVER!!!", 0, -display.contentHeight*0.3, "assets/fonts/trs-million-rg.ttf" or native.systemFontBold, 22 )
