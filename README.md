@@ -31,8 +31,8 @@ Source file for graphics is also in the Extras folder so that anyone who wants t
 
 
 #Graphics
-1.Inkscape - free open source tool for graphic. I did all graphics in inkscape
-2.TeturePacker - Pro Trial version for corona- Packing graphics
+1. Inkscape - free open source tool for graphic. I did all graphics in inkscape
+2. TeturePacker - Pro Trial version for corona- Packing graphics
 
 #Key Points of game
 1. Original perspective library tweaked for hero alignment at 30% left at screen instead of 50%
