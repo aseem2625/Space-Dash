@@ -11,24 +11,11 @@ which are added in the app-developers in through my fb app manager(because the a
 (Package name of the app is com.whiteshadow.geometricfunslide and geometricFunSlide was the first name I thought for this game, which now is Space Dash. This package name is must inorder to publish to facebook)
 
 #Rules
-Reach the Coin without touching any object in limited time
+* Reach the Coin without touching any spikes/moving object in limited time
 
 #Controls
-Use accelerometer to control the player
-Or in case you're going too fast then give impulse to player in opposite direction by clicking in opposite direction
-
-#Future map:
-Source file for graphics is also in the Extras folder so that anyone who wants to learn can modify it from there
-
-
-#Credits
--SOUNDS And MUSIC
-* http://soundimage.org/looping-music/
-* http://soundbible.com/706-Swoosh-3.html
-
--FONTS: http://www.1001fonts.com/video-game-fonts.html
-
--PARTICLE DESIGNER: http://particle2dx.com/
+* Use accelerometer to control the player
+* Or if  you're going sliding fast then give impulse to player in opposite direction by tapping in opposite direction
 
 
 #Graphics
@@ -50,6 +37,18 @@ Source file for graphics is also in the Extras folder so that anyone who wants t
 12. Screen shot on game over and publish on Facebook. Currently game is registered for "prototype game fun slide"(Original name of my game) on facebook for the API key and I am not sure if you'll be able to published post as facebook restrict in-developement apps activites to be seen only developers.
 (SCREENSHOTS are attached in extras folder)
 
+#Future map:
+Source file for graphics is also in the Extras folder so that anyone who wants to learn can modify it from there
+
+
+#Credits
+-SOUNDS And MUSIC
+* http://soundimage.org/looping-music/
+* http://soundbible.com/706-Swoosh-3.html
+
+-FONTS: http://www.1001fonts.com/video-game-fonts.html
+
+-PARTICLE DESIGNER: http://particle2dx.com/
 
 
 #Duration of prototype development
