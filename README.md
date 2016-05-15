@@ -1,8 +1,11 @@
 # Space-Dash
 Space Dash game for corona venturesity.com hackathon
+-Author: Aseem Gupta. Game Prototyping done for CORONA "Game Warriors" hackathon-venturesity.com
+Had enough Fun over the week while learning and creating a prototype
 
-#Hackathon Deliverables:
-Check Extras folder
+#Hackathon DELIVERABLES and some screenshots:
+Check "Extras" folder. 2 apks are attaches. Other apk has facebooks social share and sharing might only work for those facebook accounts 
+which are added in the app-developers in through my fb app manager(because the app is in development phase and not published on google play) 
 
 (Package name of the app is com.whiteshadow.geometricfunslide and geometricFunSlide was the first name I thought for this game, which now is Space Dash. This package name is must inorder to publish to facebook)
 
@@ -17,16 +20,18 @@ Or in case you're going too fast then give impulse to player in opposite directi
 
 
 #Credits
--Sounds And Music
-http://soundimage.org/looping-music/
-http://soundbible.com/706-Swoosh-3.html
-http://particle2dx.com/
-http://www.1001fonts.com/video-game-fonts.html
+-SOUNDS And MUSIC
+a. http://soundimage.org/looping-music/
+b. http://soundbible.com/706-Swoosh-3.html
+
+-FONTS: http://www.1001fonts.com/video-game-fonts.html
+
+-PARTICLE DESIGNER: http://particle2dx.com/
 
 
 #Graphics
-Inkscape - free open source tool for graphic. I did all graphics in inkscape
-TeturePacker - Pro Trial version for corona
+-Inkscape - free open source tool for graphic. I did all graphics in inkscape
+-TeturePacker - Pro Trial version for corona- Packing graphics
 
 #Key Points of game
 1. Original perspective library tweaked for hero alignment at 30% left at screen instead of 50%
@@ -51,8 +56,6 @@ TeturePacker - Pro Trial version for corona
 
 
 
-
 #TODO:
-Score system: Score setting and saving is implemented
-But due to time constraint Score isn't implemented yet.
+Score system: Score setting and saving is implemented. But due to time constraint score in the game isn't implemented yet.
 
