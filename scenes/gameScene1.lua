@@ -211,19 +211,23 @@ local function captureWithDelay()
 
 --  To be used AUTOMATICALLY when the game is over
 
+    -- scene.screenCap.x = display.contentCenterX
+    -- scene.screenCap.y = display.contentCenterY
+
+    -- -- display.save( screenCap, { filename="WOW.jpg", baseDir=system.TemporaryDirectory}} )
+    -- facebookShare.score = 50
+    -- facebookShare.doFBLogin()
+end
+
+-------------------------------------------------------------------------------
+function handleFacebookShareEvent()
+    -- captureWithDelay()
     scene.screenCap.x = display.contentCenterX
     scene.screenCap.y = display.contentCenterY
 
     -- display.save( screenCap, { filename="WOW.jpg", baseDir=system.TemporaryDirectory}} )
     facebookShare.score = 50
     facebookShare.doFBLogin()
-
-    timer.performWithDelay( 600000, removeScreenCap )
-end
-
--------------------------------------------------------------------------------
-function handleFacebookShareEvent()
-    captureWithDelay()
 end
 
 -------------------------------------------------------------------------------
