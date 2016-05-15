@@ -34,7 +34,7 @@ which are added in the app-developers in through my fb app manager(because the a
 9. Particle emitter
 10. Coordinates are multi resolution
 11. Corona Composure GUI
-12. Screen shot on game over and publish on Facebook. Currently game is registered for "prototype game fun slide"(Original name of my game) on facebook for the API key and I am not sure if you'll be able to published post as facebook restrict in-developement apps activites to be seen only developers.
+12. Screen shot on game over and publish on Facebook. Currently game is registered for "prototype game fun slide"(initial name of my prototype) on facebook for the API key and I am not sure if you'll be able to published post as facebook restrict in-developement apps activites to be seen only developers.
 (SCREENSHOTS are attached in extras folder)
 
 #Future map:
