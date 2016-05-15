@@ -38,10 +38,10 @@ which are added in the app-developers in through my fb app manager(because the a
 (SCREENSHOTS are attached in extras folder)
 
 #Future map:
-Source file for graphics is also in the Extras folder so that anyone who wants to learn can modify it from there
+In case anyone wants to learn or extend game for educational purpose then you're free to take the game art source file in Extras folder. Player die and happy-win graphics aren't there in game but are drawn in svg file. Make sure you abide by License.
 
 
-#Credits
+#Credits (Thanks guys)
 -SOUNDS And MUSIC
 * http://soundimage.org/looping-music/
 * http://soundbible.com/706-Swoosh-3.html
