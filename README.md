@@ -22,8 +22,8 @@ Source file for graphics is also in the Extras folder so that anyone who wants t
 
 #Credits
 -SOUNDS And MUSIC
-a. http://soundimage.org/looping-music/
-b. http://soundbible.com/706-Swoosh-3.html
+1. http://soundimage.org/looping-music/
+2. http://soundbible.com/706-Swoosh-3.html
 
 -FONTS: http://www.1001fonts.com/video-game-fonts.html
 
@@ -31,8 +31,8 @@ b. http://soundbible.com/706-Swoosh-3.html
 
 
 #Graphics
--Inkscape - free open source tool for graphic. I did all graphics in inkscape
--TeturePacker - Pro Trial version for corona- Packing graphics
+1.Inkscape - free open source tool for graphic. I did all graphics in inkscape
+2.TeturePacker - Pro Trial version for corona- Packing graphics
 
 #Key Points of game
 1. Original perspective library tweaked for hero alignment at 30% left at screen instead of 50%
