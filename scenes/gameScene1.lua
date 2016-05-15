@@ -272,6 +272,7 @@ local handlePauseBtnEvent = function(event)
     if "began" == event.phase then 
         scene.btnClickChannel = scene.playLoadedSound(btnClickEffect, 0, 0, effectsVol)
     elseif "ended" == event.phase then
+        removeScreenCap()
         handleGameOverEvent(3)
     end
 
