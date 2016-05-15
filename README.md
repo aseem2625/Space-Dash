@@ -60,4 +60,5 @@ In case anyone wants to learn or extend game for educational purpose then you're
 * Score Manager is implemented. But due to time constraint, assigning score according to player accomplishments are yet to be added
 * Add levels. For another kind of level idea, refer the image attatched in Extras folder
 * Graphics optimization is done only for menu sprites. To be done for others
+* Game speed refining
 
