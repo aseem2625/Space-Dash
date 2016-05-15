@@ -194,8 +194,8 @@ end
 
 
 function removeScreenCap()
-    scene.screenCap:removeSelf()
-    scene.screenCap = nil    
+    -- scene.screenCap:removeSelf()
+    -- scene.screenCap = nil    
 end
 
 
@@ -223,7 +223,7 @@ local function captureWithDelay()
     facebookShare.score = 50
     facebookShare.doFBLogin(scene.screenCap)
 
-    timer.performWithDelay( 3000, removeScreenCap )
+    timer.performWithDelay( 600000, removeScreenCap )
 end
 
 -------------------------------------------------------------------------------
