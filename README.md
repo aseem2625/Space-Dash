@@ -29,7 +29,7 @@ which are added in the app-developers in through my fb app manager(because the a
 4. Sensors
 5. Accelerometer
 6. Audio - Music and Effects
-7. Sprite Animation and transition based coron animation
+7. Sprite Sheet Animation and transition based coron animation
 8. Reading and writing score
 9. Particle emitter
 10. Coordinates are multi resolution
@@ -59,5 +59,5 @@ In case anyone wants to learn or extend game for educational purpose then you're
 #TODO:
 * Score Manager is implemented. But due to time constraint, assigning score according to player accomplishments are yet to be added
 * Add levels. For another kind of level idea, refer the image attatched in Extras folder
-
+* Graphics optimization is done only for menu sprites. To be done for others
 
