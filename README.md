@@ -52,10 +52,12 @@ In case anyone wants to learn or extend game for educational purpose then you're
 
 
 #Duration of prototype development
-~40 hrs over 1 week duration
+~30-40 hrs over 1 week duration
 
 
 
 #TODO:
-Score system: Score setting and saving is implemented. But due to time constraint score in the game isn't implemented yet.
+* Score Manager is implemented. But due to time constraint, assigning score according to player accomplishments are yet to be added
+* Add levels. For another kind of level idea, refer the image attatched in Extras folder
+
 
