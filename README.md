@@ -16,7 +16,8 @@ Reach the Coin without touching any object in limited time
 Use accelerometer to control the player
 Or in case you're going too fast then give impulse to player in opposite direction by clicking in opposite direction
 
-#Future map and source file for graphic has been attached so that anyone who wants to learn can modify it from there
+#Future map:
+Source file for graphics is also in the Extras folder so that anyone who wants to learn can modify it from there
 
 
 #Credits
