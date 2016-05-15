@@ -191,7 +191,46 @@ local handleCloseBtnEvent = function(event)
     end    
 end
 
+
+
+function removeScreenCap()
+    scene.screenCap:removeSelf()
+    scene.screenCap = nil    
+end
+
+
+-- Image Capture
+local function captureWithDelay()
+
+-- To Be used when user clicks photo click
+    -- local capture = display.capture( camera, {saveToPhotoLibrary= true})
+    -- facebookShare.printName(capture.name)
+    -- capture:removeSelf()
+    -- capture = nil
+    -- local alert = native.showAlert( "Success", "Screen Capture Saved to Library", { "OK" } )
+
+--  To be used AUTOMATICALLY when the game is over
+    scene.screenCap = display.captureScreen()
+
+    -- Scale the screen capture, now on the screen, to half its size
+    scene.screenCap:scale( 0.4, 0.4 )
+    display.save( scene.screenCap, { filename="WOW.jpg", baseDir=system.TemporaryDirectory } )
+
+    scene.screenCap.x = display.contentCenterX
+    scene.screenCap.y = display.contentCenterY
+
+    -- display.save( screenCap, { filename="WOW.jpg", baseDir=system.TemporaryDirectory}} )
+    facebookShare.score = 50
+    facebookShare.doFBLogin(scene.screenCap)
+
+    timer.performWithDelay( 3000, removeScreenCap )
+end
+
 -------------------------------------------------------------------------------
+function handleFacebookShareEvent()
+    captureWithDelay()
+end
+
 -------------------------------------------------------------------------------
 
 local handleReloadBtnEvent = function(event)    
@@ -431,7 +470,6 @@ function scene:setUpPauseDrawer()
     scene.pausePanel:insert( scene.closeDrawerButton)
     scene.closeDrawerButton.x = scene.closeDrawerButton.x - scene.closeDrawerButton.contentWidth/2
 
-
     scene.reloadDrawerButton = widget.newButton({
             width = 50,
             height = 50,
@@ -443,8 +481,24 @@ function scene:setUpPauseDrawer()
 
     scene.reloadDrawerButton.isVisible = true
     scene.pausePanel:insert( scene.reloadDrawerButton)
-    scene.reloadDrawerButton.x = scene.closeDrawerButton.x
-    scene.reloadDrawerButton.y = scene.closeDrawerButton.y + 1.2*scene.reloadDrawerButton.contentWidth
+    scene.reloadDrawerButton.x = scene.closeDrawerButton.x - 1.2*scene.reloadDrawerButton.contentWidth
+    scene.reloadDrawerButton.y = scene.closeDrawerButton.y + 1.2*scene.reloadDrawerButton.contentHeight
+
+    scene.facebookShareDrawerButton = widget.newButton({
+            width = 50,
+            height = 50,
+            defaultFile = "assets/graphics/unoptimized_btns/facebook_share_btn.png",
+            overFile = "assets/graphics/unoptimized_btns/facebook_share_btn.png",
+            label = "",
+            onEvent = handleFacebookShareEvent
+    })
+
+
+    scene.facebookShareDrawerButton.isVisible = true
+    scene.pausePanel:insert( scene.facebookShareDrawerButton)
+    scene.facebookShareDrawerButton.x = scene.closeDrawerButton.x + 1.2*scene.facebookShareDrawerButton.contentWidth
+    scene.facebookShareDrawerButton.y = scene.closeDrawerButton.y + 1.2*scene.reloadDrawerButton.contentHeight
+
 
 
     scene.effectsButtonActive = widget.newButton({
@@ -708,39 +762,11 @@ end
 
 -------------------------------------------------------------------------------
 
--- Image Capture
-local function captureWithDelay()
-
--- To Be used when user clicks photo click
-    -- local capture = display.capture( camera, {saveToPhotoLibrary= true})
-    -- facebookShare.printName(capture.name)
-    -- capture:removeSelf()
-    -- capture = nil
-    -- local alert = native.showAlert( "Success", "Screen Capture Saved to Library", { "OK" } )
-
---  To be used AUTOMATICALLY when the game is over
-    local screenCap = display.captureScreen()
-
-    -- Scale the screen capture, now on the screen, to half its size
-    screenCap:scale( 0.4, 0.4 )
-    display.save( screenCap, { filename="WOW.jpg", baseDir=system.TemporaryDirectory } )
-
-    screenCap.x = display.contentCenterX
-    screenCap.y = display.contentCenterY
-
-    -- display.save( screenCap, { filename="WOW.jpg", baseDir=system.TemporaryDirectory}} )
-    -- facebookShare.score = 50
-    -- facebookShare.doFBLogin(scene.screenCap)
-
-    screenCap:removeSelf()
-    screenCap = nil
-
-end
-
 -- Video completion listener
 local function onVideoComplete ( event )
     print( "video session ended with duratoin:")
 end
+
 
 -- Capture completion listener
 local function onComplete( event )
@@ -751,7 +777,7 @@ local function onComplete( event )
     end
 end
 
-local function captureGamePlay()
+local function captureGameVideo()
     if media.hasSource( media.Camera ) then
         media.captureVideo( { listener=onComplete } )
     else
@@ -760,11 +786,11 @@ local function captureGamePlay()
 end
 
 
--- timer.performWithDelay( 2000, captureGamePlay )
+-- timer.performWithDelay( 2000, captureGameVideo )
 -- timer.performWithDelay( 4000, onVideoComplete )
 
 -- TODO on button click or collision
-timer.performWithDelay( 4000, captureWithDelay )
+-- timer.performWithDelay( 4000, captureWithDelay )
 
 -------------------------------------------------------------------------------
 
