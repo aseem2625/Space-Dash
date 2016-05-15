@@ -39,15 +39,14 @@ Source file for graphics is also in the Extras folder so that anyone who wants t
 2. screen capture and facebook share
 3. physics
 4. sensors
-5. levels
-6. accelerometer
-7. Audio - Music and Effects
-8. Sprite Animation and transition based coron animation
-9. Reading and writing score
-10. Particle emitter
-11. Coordinates are multi resolution
-12. Corona Composure GUI
-13. Screen shot on game over and publish on Facebook. Currently game is registered for "prototype game fun slide"(Original name of my game) on facebook for the API key and I am not sure if you'll be able to published post as facebook restrict in-developement apps activites to be seen only developers.
+5. accelerometer
+6. Audio - Music and Effects
+7. Sprite Animation and transition based coron animation
+8. Reading and writing score
+9. Particle emitter
+10. Coordinates are multi resolution
+11. Corona Composure GUI
+12. Screen shot on game over and publish on Facebook. Currently game is registered for "prototype game fun slide"(Original name of my game) on facebook for the API key and I am not sure if you'll be able to published post as facebook restrict in-developement apps activites to be seen only developers.
 (SCREENSHOTS are attached in extras folder)
 
 
