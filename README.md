@@ -62,9 +62,8 @@ In case anyone wants to learn or extend game for educational purpose then you're
 * Graphics optimization is done only for menu sprites. To be done for others
 * Game speed refining
 
-![Alt text](Extras/Screen Shot 2016-05-16 at 12.16.16 am.png)
-![Alt text](Extras/Screen Shot 2016-05-16 at 12.17.16 am.png)
-![Alt text](Extras/Screen Shot 2016-05-16 at 12.17.50 am.png)
-![Alt text](Extras/apk working with fb/Screen Shot 2016-05-16 at 12.05.53 am.png)
-![Alt text](Extras/apk working with fb/Screen Shot 2016-05-16 at 12.09.32 am.png)
-
+<img src="Extras/Screen&#32;Shot&#32;2016-05-16&#32;at&#32;12.16.16&#32;am.png" height="180px"/>
+<img src="Extras/Screen&#32;Shot&#32;2016-05-16&#32;at&#32;12.17.16&#32;am.png" height="180px"/>
+<img src="Extras/Screen&#32;Shot&#32;2016-05-16&#32;at&#32;12.17.50&#32;am.png" height="180px"/>
+<img src="Extras/apk&#32;working&#32;with&#32;fb/Screen&#32;Shot&#32;2016-05-16&#32;at&#32;12.05.53&#32;am.png" height="180px"/>
+<img src="Extras/apk&#32;working&#32;with&#32;fb/Screen&#32;Shot&#32;2016-05-16&#32;at&#32;12.09.32&#32;am.png" height="180px"/>
